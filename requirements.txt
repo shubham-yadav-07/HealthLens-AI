@@ -1,0 +1,16 @@
+# Core data science
+numpy>=1.26
+pandas>=2.1,<4
+scipy>=1.11
+scikit-learn>=1.4
+xgboost>=2.0
+shap>=0.45
+joblib>=1.3
+
+# Visualisation
+plotly>=5.20
+matplotlib>=3.8
+seaborn>=0.13
+
+# Web app (st.plotly_chart(width="stretch") needs Streamlit 1.50+)
+streamlit>=1.50,<2
