@@ -112,3 +112,6 @@ so check them on your machine and report anything that looks off.
 Smith, J.W., Everhart, J.E., Dickson, W.C., Knowler, W.C., Johannes, R.S. (1988). Using the ADAP learning algorithm to forecast the onset
 of diabetes mellitus. *Proc. Annu. Symp. Comput. Appl. Med. Care*, 261-265. Data: NIDDK, via UCI/Kaggle.
 
+## Author
+Shubham Yadav
+
