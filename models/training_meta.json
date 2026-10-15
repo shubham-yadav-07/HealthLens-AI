@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "trained_at_utc": "2026-10-15 06:28:52",
+    "seconds": 164.1,
+    "random_state": 42,
+    "test_size": 0.2,
+    "cv_folds": 5,
+    "cv_type": "CV of the best configuration (slightly optimistic)",
+    "tuned": true,
+    "n_rows": 768,
+    "n_train": 614,
+    "n_test": 154,
+    "positive_rate_all": 0.3489583333333333,
+    "positive_rate_train": 0.3485342019543974,
+    "positive_rate_test": 0.35064935064935066,
+    "dataset_hash": "c3a00ab1d98dfa92",
+    "versions": {
+      "python": "3.12.3",
+      "scikit-learn": "1.9.1",
+      "xgboost": "3.4.1",
+      "pandas": "3.0.6",
+      "numpy": "2.5.4"
+    }
+  },
+  "best_params": {
+    "Logistic Regression": {
+      "C": 0.1
+    },
+    "Decision Tree": {
+      "max_depth": 4,
+      "min_samples_leaf": 1
+    },
+    "Random Forest": {
+      "max_depth": 4,
+      "min_samples_leaf": 5
+    },
+    "XGBoost": {
+      "learning_rate": 0.03,
+      "max_depth": 2,
+      "n_estimators": 100,
+      "subsample": 0.8
+    }
+  }
+}
