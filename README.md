@@ -99,40 +99,7 @@ HealthLens-AI/
 | Models fail to load after upgrading libraries | Just start the app - it retrains automatically - or run `python -m src.train_models`. |
 | No internet for dataset | See `data/README.md` (manual download instructions). |
 
----
-## 2. Push to GitHub
 
-1. Create an **empty** repository on <https://github.com/new> named `HealthLens-AI` (no README, no .gitignore - they already exist).
-2. In the VS Code terminal, inside the project folder:
-```bash
-git init
-git add .
-git commit -m "Initial commit: HealthLens AI"
-git branch -M main
-git remote add origin https://github.com/<your-username>/HealthLens-AI.git
-git push -u origin main
-```
-Replace `<your-username>`. If Git asks who you are (first time only):
-```bash
-git config --global user.name "Your Name"
-git config --global user.email "you@example.com"
-```
-GitHub no longer accepts account passwords for `git push`; sign in through the browser window that opens (Git Credential Manager) or use a
-[personal access token](https://github.com/settings/tokens) as the password. Later updates:
-```bash
-git add .
-git commit -m "Describe your change"
-git push
-```
-
-## 3. Deploy on Streamlit Community Cloud (free)
-1. Push the project to GitHub (section 2). Make the repository **public**, or give Streamlit access to your private repo.
-2. Go to <https://share.streamlit.io> and sign in with GitHub.
-3. Click **Create app** -> *Deploy a public app from GitHub*.
-4. Choose your repository, branch `main`, and main file path `app.py`.
-5. Open **Advanced settings** and choose **Python 3.11 or 3.12**. No secrets are needed.
-6. Click **Deploy**. The first start installs packages (a few minutes). If the saved models are incompatible with the cloud's library
-   versions, the app retrains once automatically (about a minute) - this is expected.
 
 No paid API, key or credential is used anywhere. Do not commit private health data; uploaded CSVs stay in the user's session memory only.
 
@@ -145,5 +112,3 @@ so check them on your machine and report anything that looks off.
 Smith, J.W., Everhart, J.E., Dickson, W.C., Knowler, W.C., Johannes, R.S. (1988). Using the ADAP learning algorithm to forecast the onset
 of diabetes mellitus. *Proc. Annu. Symp. Comput. Appl. Med. Care*, 261-265. Data: NIDDK, via UCI/Kaggle.
 
-## License
-MIT for the code (add a `LICENSE` file if you publish). The dataset belongs to its original providers; follow their terms.
